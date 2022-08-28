@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/picture"
+    tools:context=".ChooseActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:src="@drawable/mileslogo"
+            android:layout_gravity="center"
+            android:layout_marginTop="125dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="70dp">
+            <Button
+                android:id="@+id/bt_rider"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/riderlogo" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OR"
+                android:textColor="#ecd422"/>
+            <Button
+                android:id="@+id/bt_driver"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="@drawable/driverlogo"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="40dp"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/mywidget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:fontFamily="@font/quicksand"
+            android:textSize="15dp"
+            android:layout_marginTop="85dp"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:textColor="#ffffff"
+            android:text="  Welcome   to   MILES .   Please   choose   your   platform !  "
+            android:singleLine="true" />
+    </LinearLayout>
+
+</LinearLayout>

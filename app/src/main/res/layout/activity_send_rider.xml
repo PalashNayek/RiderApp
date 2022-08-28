@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:id="@+id/linearLayoutLogin"
+    tools:context=".SendRiderActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/backArrowBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="17dp"
+                    android:src="@drawable/arrow" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="17dp"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:gravity="center"
+                    android:text="Send a Ride"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Sender information :"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            app:fontFamily="@font/quicksand" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sender_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/round"
+                android:gravity="center_vertical"
+                android:hint="Name"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="16dp"
+                app:fontFamily="@font/quicksand" />
+
+            <TextView
+                android:id="@+id/sender_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round"
+                android:gravity="center_vertical"
+                android:hint="Email"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="16dp"
+                app:fontFamily="@font/quicksand" />
+
+            <TextView
+                android:id="@+id/sender_phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round"
+                android:gravity="center_vertical"
+                android:hint="Phone Number"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="16dp"
+                app:fontFamily="@font/quicksand" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:text="Rider information :"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            app:fontFamily="@font/quicksand" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/rider_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/round"
+                android:gravity="center_vertical"
+                android:hint="Name"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+
+                android:textSize="16dp"
+                app:fontFamily="@font/quicksand" />
+
+            <EditText
+                android:id="@+id/rider_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round"
+                android:gravity="center_vertical"
+                android:hint="Email"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="16dp"
+
+                app:fontFamily="@font/quicksand" />
+
+            <EditText
+                android:id="@+id/rider_phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round"
+                android:gravity="center_vertical"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="16dp"
+                app:fontFamily="@font/quicksand" />
+        </LinearLayout>
+        <!--</LinearLayout>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="53dp"
+            android:layout_marginTop="20dp"
+            android:singleLine="true"
+            android:text="Pick Up :"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            app:fontFamily="@font/quicksand" />
+
+        <LinearLayout
+            android:id="@+id/findPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:onClick="findPlace"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/greendot"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:id="@+id/searched_address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/round"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:text="Pick Up Address "
+                android:textColor="#fff"
+                android:textSize="16dp"
+                app:fontFamily="@font/quicksand" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:background="@drawable/vertical"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:text="Drop Off :"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                app:fontFamily="@font/quicksand" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="PickOFF"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/reddot"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:id="@+id/PickOff"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/round"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:text="Drop Address "
+                android:textColor="#fff"
+                android:textSize="16dp"
+                app:fontFamily="@font/quicksand" />
+
+        </LinearLayout>
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Pick up Date :"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                app:fontFamily="@font/quicksand" />
+
+            <TextView
+                android:id="@+id/showDateTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Select Date"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                app:fontFamily="@font/quicksand"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <!-- <com.applandeo.materialcalendarview.CalendarView
+             android:id="@+id/calendarView"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:abbreviationsBarColor="#000"
+             app:abbreviationsLabelsColor="#fff"
+             app:daysLabelsColor="#fff"
+             app:headerColor="#000"
+             app:headerLabelColor="#fff"
+             app:pagesColor="#000">
+
+         </com.applandeo.materialcalendarview.CalendarView>-->
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/calendarGridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mcv_showOtherDates="all"
+            app:mcv_selectionColor="#62ABB3"
+            app:mcv_dateTextAppearance="@color/colorAccent"
+            app:mcv_arrowColor="@android:color/white"
+            app:mcv_firstDayOfWeek="sunday"
+            app:mcv_calendarMode="month"
+            android:background="#000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="35dp"
+                android:text="Pick Up Time : -"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                app:fontFamily="@font/quicksand" />
+
+           <!-- <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="35dp"
+                android:text="Select Time"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                app:fontFamily="@font/quicksand" />-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/view_3"
+                    android:layout_width="200dp"
+                    android:layout_height="0.4dp"
+                    android:background="#a1a1a1" />
+
+                <TextClock
+                    android:id="@+id/textClock1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:format12Hour="hh:mm:ss a"
+                    android:text="00:00 PM"
+                    android:textColor="#FFF"
+                    android:textSize="26sp"
+                    />
+                <TextView
+                    android:id="@+id/time_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:text="11:11 PM"
+                    android:textColor="#FFF"
+                    android:textSize="26sp"
+                    android:visibility="gone"
+                    />
+
+                <View
+                    android:id="@+id/view_4"
+                    android:layout_width="200dp"
+                    android:layout_height="0.4dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#a1a1a1" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+       <!-- <TimePicker
+            android:id="@+id/simpleTimePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="5dp"
+            android:background="#020000"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:timePickerMode="spinner" />-->
+
+        <Button
+            android:id="@+id/login_btn"
+            style="?android:textAppearanceSmall"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login5"
+            android:padding="10dip"
+            android:text="Send Ride"
+            android:textAllCaps="false"
+            android:textColor="#131212"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text=""
+            android:textSize="16dp"
+            app:fontFamily="@font/quicksand" />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

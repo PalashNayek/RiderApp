@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register"
+    android:orientation="vertical"
+    android:id="@+id/linearLayoutSnackBar"
+    xmlns:dots="http://schemas.android.com/apk/res-auto"
+    tools:context=".SignUpActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#000000"
+        android:id="@+id/linearLayoutProgress"
+        android:visibility="gone">
+
+        <TextView
+            android:text="@string/loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <com.example.hp.googlemap.DotsTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dots"
+            android:textColor="#ffffff"
+            android:textSize="45sp"
+            dots:autoplay="false"
+            dots:period="1000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/backArrowbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/arrow" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginRight="17dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:gravity="center"
+                android:text="Register"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_account_circle_black_24dp" />
+
+        <EditText
+            android:id="@+id/ed_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round"
+            android:fontFamily="@font/quicksand"
+            android:hint="Name"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:digits="a,b,q,w,e,r,t,y,u,i,o,p,s,d,f,g,h,j,k,l,z,x,c,v,n,m,Q,W,E,R,T,Y,U,I,O,P,A,S,D,F,G,H,J,K,L,Z,X,C,V,B,N,M, ,"
+            android:textColorHint="#bfbfbfbf"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/edtdob"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round"
+            android:fontFamily="@font/quicksand"
+            android:hint="Birthdate (MM/DD/YY)"
+            android:inputType="text"
+            android:maxLength="8"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textColorHint="#bfbfbfbf"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/ed_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round"
+            android:fontFamily="@font/quicksand"
+            android:hint="Phone"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:digits="0123456789"
+            android:textColorHint="#bfbfbfbf"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/quicksand"
+            android:text="Please add your phone number for easy login and password retrieval."
+            android:textColor="#bfbfbfbf"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/ed_zip"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round"
+            android:fontFamily="@font/quicksand"
+            android:hint="Zip Code"
+            android:inputType="number"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:digits="0123456789"
+            android:textColorHint="#bfbfbfbf"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/ed_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round"
+            android:fontFamily="@font/quicksand"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textColorHint="#bfbfbfbf"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/ed_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round"
+            android:fontFamily="@font/quicksand"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textColorHint="#bfbfbfbf"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/quicksand"
+            android:text="Enter your preferred card information :"
+            android:textColor="#bfbfbfbf"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/card_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round"
+            android:fontFamily="@font/quicksand"
+            android:hint="Name on card"
+            android:inputType="textCapCharacters"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:digits="A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z, , , "
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textColorHint="#bfbfbfbf"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/ed_number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round"
+            android:fontFamily="@font/quicksand"
+            android:hint="Card Number"
+            android:inputType="number"
+            android:maxLength="19"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textColorHint="#bfbfbfbf"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/date_month"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/round"
+                android:fontFamily="@font/quicksand"
+                android:hint="MM/YY"
+                android:inputType="text"
+                android:maxLength="5"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textColorHint="#bfbfbfbf"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/cvc"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/round"
+                android:fontFamily="@font/quicksand"
+                android:hint="CVC"
+                android:inputType="number"
+                android:maxLines="1"
+                android:maxLength="3"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textColorHint="#bfbfbfbf"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/quicksand"
+            android:text="By applying, I agree to MILES's Terms of Use and confirm that I have read and understand the Privacy Policy"
+            android:textColor="#bfbfbfbf"
+            android:textSize="11dp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/quicksand"
+            android:text="I further agree that MILES or its partners may contact me by phone, email or text (manual and automated) using the contact information I provided, including for the purpose of targeted marketing."
+            android:textColor="#bfbfbfbf"
+            android:textSize="11dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btn_done"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:background="@drawable/done_btn"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

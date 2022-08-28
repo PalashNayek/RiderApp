@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000"
+    tools:context="driver.IdentityVerificationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="Identity Verification &amp; Direct Deposit"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/iv_back3"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:src="@drawable/arrow"
+                android:layout_marginLeft="10dp"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="In order for MILES to verify your idetity and conduct a background check, we will need your Social Security Number."
+                        android:textSize="16dp"
+                        android:textColor="#bfbfbfbf"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/quicksand"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:background="@drawable/milesappscreens"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Social Security Number"
+                            android:textSize="18dp"
+                            android:textColor="#ffffff"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/quicksand" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <EditText
+                                android:id="@+id/threedigit"
+                                android:layout_width="55dp"
+                                android:layout_height="35dp"
+                                android:layout_marginRight="4dp"
+                                android:textAlignment="center"
+                                android:singleLine="true"
+                                android:maxLength="3"
+                                android:hint="XXX"
+                                android:textColorHint="#000"
+                                android:inputType="number"
+                                android:textCursorDrawable="@drawable/cursorcolour"
+                                android:background="@drawable/blackround"/>
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/securityline"/>
+
+                            <EditText
+                                android:id="@+id/twodigit"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:textAlignment="center"
+                                android:singleLine="true"
+                                android:maxLength="2"
+                                android:hint="XX"
+                                android:textColorHint="#000"
+                                android:inputType="number"
+                                android:textCursorDrawable="@drawable/cursorcolour"
+                                android:background="@drawable/blackround"/>
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/securityline"/>
+                            <EditText
+                                android:id="@+id/fourdigit"
+                                android:layout_width="65dp"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="4dp"
+                                android:textAlignment="center"
+                                android:singleLine="true"
+                                android:maxLength="4"
+                                android:hint="XXXX"
+                                android:textColorHint="#000"
+                                android:textCursorDrawable="@drawable/cursorcolour"
+                                android:inputType="number"
+                                android:background="@drawable/blackround"/>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Your creadit will no be affected by, By the check"
+                        android:textColor="#bfbfbfbf"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/quicksand"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/underlineyellow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Background Check Disclaimer"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/quicksand"
+                        android:textColor="#d7c418" />
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/line"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="In order for MILES to direct deposit your earnings, we will need your deposit account details."
+                        android:textSize="16dp"
+                        android:textColor="#bfbfbfbf"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/quicksand"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="230dp"
+                        android:background="@drawable/mileslockscreen"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Routing #"
+                            android:textSize="18dp"
+                            android:textColor="#ffffff"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"/>
+
+                        <EditText
+                            android:id="@+id/routing"
+                            android:layout_width="160dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="10dp"
+                            android:paddingLeft="10dp"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:hint="XXXXXXXXX"
+                            android:textColorHint="#000"
+                            android:textCursorDrawable="@drawable/cursorcolour"
+                            android:background="@drawable/blackround"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Account #"
+                            android:textSize="18dp"
+                            android:textColor="#ffffff"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:maxLength="10"/>
+
+                        <EditText
+                            android:id="@+id/account"
+                            android:layout_width="160dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="10dp"
+                            android:paddingLeft="10dp"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:hint="XXXXXXXXX"
+                            android:textColorHint="#000"
+                            android:textCursorDrawable="@drawable/cursorcolour"
+                            android:background="@drawable/blackround"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Verify Account #"
+                            android:textSize="18dp"
+                            android:textColor="#ffffff"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"/>
+
+                        <EditText
+                            android:id="@+id/verifyaccount"
+                            android:layout_width="160dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="10dp"
+                            android:paddingLeft="10dp"
+                            android:inputType="number"
+                            android:hint="XXXXXXXXX"
+                            android:textColorHint="#000"
+                            android:textCursorDrawable="@drawable/cursorcolour"
+                            android:background="@drawable/blackround"
+                            android:maxLength="10"/>
+
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/btn_identity"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/btnext"
+                        android:fontFamily="@font/quicksand"
+                        android:padding="10dip"
+                        android:text="Next"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:textColor="#000"
+                        android:textSize="15dp"
+                        android:layout_gravity="center" />
+
+
+
+
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

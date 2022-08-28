@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#62ABB3"
+    android:background="@drawable/popup_background"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".ConfirmTripPopupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:paddingLeft="15dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/arrow2"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/popupHeadertxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:text="Reason for cancelling"
+            android:fontFamily="@font/quicksand"
+            android:textColor="#000"
+            android:textSize="18dp"
+            app:fontFamily="@font/quicksand_light"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="70dp"
+        android:background="#453e3e" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+
+        android:layout_marginLeft="55dp">
+
+        <TextView
+            android:id="@+id/driverWasLatetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver was late"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/quicksand_light"/>
+        <TextView
+            android:id="@+id/showUptxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver did not show up"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/quicksand_light"
+            />
+
+        <TextView
+            android:id="@+id/tooFartxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver was too far"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            app:fontFamily="@font/quicksand_light"/>
+
+        <TextView
+            android:id="@+id/longerNeededtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No longer needed"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/quicksand"
+            app:fontFamily="@font/quicksand_light"/>
+
+        <TextView
+            android:id="@+id/evenCanceltxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Even cancelled"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/quicksand"
+            app:fontFamily="@font/quicksand_light"/>
+        <TextView
+            android:id="@+id/othertxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/quicksand"
+            app:fontFamily="@font/quicksand_light"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirmTripbtn"
+        style="?android:textAppearanceSmall"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/loginbotton5"
+        android:padding="10dip"
+        android:text="Confirm Cancel"
+        android:textStyle="bold"
+        app:fontFamily="@font/quicksand_light"
+        android:fontFamily="@font/quicksand"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:layout_gravity="center"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#4d4a4a"
+
+        android:text="*Disclaimer: Trips cancelled within 3 minutes will be assessed a $2.00 cancelation fee. Trips cancelled after 5 minutes will be assessed a $5.00 cancellation fee."
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/quicksand"
+        app:fontFamily="@font/quicksand_light"/>
+
+</LinearLayout>

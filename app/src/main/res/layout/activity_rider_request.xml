@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#51a4a2a2"
+    android:orientation="vertical"
+    tools:context=".driver.RiderRequestActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/quicksand"
+        android:gravity="center"
+        android:text="4 Minutes Away"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/quicksand"
+        android:gravity="center"
+        android:text="Random Bonus Eligible"
+        android:textSize="14dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true">
+
+        <com.jackandphantom.circularprogressbar.CircleProgressbar
+        android:id="@+id/cv"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/mapcircle"
+        app:cpb_foregroundProgressColor="#9cb1cc"
+        app:cpb_foregroundProgressWidth="15"
+        app:cpb_progress="100"
+        app:cpb_roundedCorner="true"
+        app:cpb_touchEnabled="true" />
+        <!--<TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:layout_gravity="center"
+            android:textColor="#20e7d3"
+            android:textSize="40sp" />-->
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/quicksand"
+        android:gravity="center"
+        android:text="Pick Up:"
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/car_tierTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#ffdb34"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/userNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand"
+            android:text=" |"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/star"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/ratingTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/quicksand"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pickUpAddressTxt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/quicksand"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
+
+   <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/quicksand"
+        android:text="Philadelphia, PA 19107"
+        android:textColor="#ffffff"
+        android:textSize="18dp" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_accept"
+            android:onClick="onButtonClickaccept"
+            android:layout_width="120dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/btngreen"
+            android:fontFamily="@font/quicksand_bold"
+            android:gravity="center"
+            android:text="Accept"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+
+            />
+
+        <Button
+            android:onClick="onButtonClickreject"
+            android:layout_width="120dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/btnred"
+            android:fontFamily="@font/quicksand_bold"
+            android:gravity="center"
+            android:text="Reject"
+            android:textAllCaps="false"
+            android:textSize="18dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/locationLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Location"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textSize="16dp"
+        android:fontFamily="@font/quicksand"
+        android:textColor="#f9bf02"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/locationLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Updated 1000 mins ago"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/quicksand"
+        android:textColor="#f9bf02"
+    android:visibility="gone"/>
+    </LinearLayout>
+</ScrollView>

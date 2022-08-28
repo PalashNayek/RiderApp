@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:id="@+id/linearLayoutSnackBar"
+    tools:context=".PaymentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:orientation="vertical"
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/arrow" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginRight="17dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:gravity="center"
+                android:text="Payment"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:orientation="vertical">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="20dp"
+                 android:fontFamily="@font/quicksand"
+                 android:text="Payment Methods :"
+                 android:textColor="#ffffff"
+                 android:textSize="20dp" />
+
+             <View
+
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:layout_marginEnd="25dp"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginRight="5dp"
+
+                 android:layout_marginStart="20dp"
+                 android:layout_marginTop="10dp"
+                 android:background="#a1a1a1" />
+
+             <FrameLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:layout_marginTop="20dp">
+                 <android.support.v7.widget.RecyclerView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/vehicleDetailsRecyclerView1"
+                     android:layout_centerHorizontal="true"
+                     android:layout_margin="5dp"
+                     android:layout_marginTop="18dp">
+                 </android.support.v7.widget.RecyclerView>
+
+                 <!--<ImageView
+                     android:id="@+id/cardImage"
+                     android:layout_width="match_parent"
+                     android:layout_height="70dp"
+                     android:layout_marginLeft="15dp"
+                     android:layout_marginRight="15dp"
+                     android:layout_marginTop="5dp">
+
+                 </ImageView>
+
+                 <TextView
+                     android:id="@+id/card_num"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="50dp"
+                     android:layout_marginRight="50dp"
+                     android:layout_marginTop="55dp"
+                     android:fontFamily="@font/quicksand"
+                     android:gravity="right"
+                     android:text=""
+                     android:textColor="#000" />-->
+             </FrameLayout>
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:orientation="vertical">
+
+                 <LinearLayout
+                     android:id="@+id/add_method_li_layout"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="15dp"
+                     android:orientation="horizontal">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="15dp"
+                         android:fontFamily="@font/quicksand"
+                         android:text="Add Payment Method"
+                         android:textColor="#ffffff"
+                         android:textSize="15dp" />
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginRight="25dp"
+
+                         >
+                     <ImageView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="143dp"
+                         app:srcCompat="@drawable/arrarow_back_payment" />
+                     </LinearLayout>
+                 </LinearLayout>
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="1dp"
+                     android:layout_below="@+id/tv_2"
+                     android:layout_marginLeft="15dp"
+                     android:layout_marginRight="20dp"
+                     android:layout_marginTop="10dp"
+                     android:background="#a1a1a1" />
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="15dp"
+                 android:orientation="vertical">
+
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="20dp"
+                     android:orientation="horizontal">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="20dp"
+                         android:fontFamily="@font/quicksand"
+                         android:text="Add Gift Card"
+                         android:textColor="#ffffff"
+                         android:textSize="15dp" />
+
+                     <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="200dp"
+                         app:srcCompat="@drawable/arrarow_back_payment" />
+
+                 </LinearLayout>
+
+                 <View
+
+                     android:layout_width="match_parent"
+                     android:layout_height="1dp"
+                     android:layout_marginLeft="15dp"
+                     android:layout_marginRight="20dp"
+                     android:layout_marginTop="10dp"
+                     android:background="#a1a1a1" />
+
+             </LinearLayout>
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_marginLeft="13dp"
+             android:layout_marginRight="13dp"
+             android:layout_marginTop="20dp"
+             android:orientation="horizontal">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:fontFamily="@font/quicksand"
+                 android:text="Miles Protection"
+                 android:textColor="#ffffff"
+                 android:textSize="20dp" />
+
+             <Switch
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_marginLeft="140dp"
+                 android:checked="true" />
+         </LinearLayout>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="15dp"
+             android:layout_marginTop="7dp"
+             android:fontFamily="@font/quicksand"
+             android:text="To switch this feature on, you must have an active card save on file. This feature allows you to ride when your balance is low and will not cover your entire trip. We will inform you before billing your card for the appropriate mileage package to cover your previous trip(s). This may result in an excess mileage balance in your account. "
+             android:textSize="10dp" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

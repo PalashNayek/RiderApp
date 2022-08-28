@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayoutSnackBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".ShareMilesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/backImg"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:src="@drawable/arrow" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Share Miles"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/quicksand"
+                    android:text="Your Available Balance :"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/availableBalanceTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:gravity="right"
+                    android:text=""
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_1"
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_below="@+id/tv_2"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="5dp"
+                android:background="#a1a1a1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="@font/quicksand"
+                    android:text="Would you like to use your miles, or "
+                    android:textColor="#ffffff"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginRight="70dp"
+                    android:fontFamily="@font/quicksand"
+                    android:text="purchase miles to send?"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/MineBtnNonBorder"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="109dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/importround"
+                    android:fontFamily="@font/quicksand"
+                    android:text="Use mine"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/MineBtnBorder"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="109dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/sssbutton"
+                    android:fontFamily="@font/quicksand"
+                    android:text="Use mine"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="13dp" />
+
+                <Button
+                    android:id="@+id/PurchaseBtnNonBorder"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="109dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/importround"
+                    android:fontFamily="@font/quicksand"
+                    android:text="Purchase"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="13dp" />
+
+                <Button
+                    android:id="@+id/PurchaseBtnBorder"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="109dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/sssbutton"
+                    android:fontFamily="@font/quicksand"
+                    android:text="Purchase"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="How many miles would you like to send?"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/round2"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/amountDetailsRecyclerView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="33dp"
+                    android:fontFamily="@font/quicksand"
+                    android:text="Send miles to :"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/emailTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/round3"
+                    android:fontFamily="@font/quicksand"
+                    android:hint="Email or Phone number"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/or" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/quicksand"
+                    android:text="Import Contacts"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/imagebordercircle"
+                        android:padding="6dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/fb" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/imagebordercircle"
+                        android:padding="6dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/gplus" />
+
+                    <Button
+                        android:id="@+id/login_btn3"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/importround"
+                        android:text="Import"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="12dp" />
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/doneBtn"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/donebutton"
+                    android:fontFamily="@font/quicksand"
+                    android:text="Done"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

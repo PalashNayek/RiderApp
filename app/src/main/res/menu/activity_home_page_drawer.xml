@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_payment"
+
+            android:title="Payment" />
+        <item
+            android:id="@+id/nav_trip_history"
+            android:title="Trip History" />
+        <item
+            android:id="@+id/nav_miles_info"
+
+            android:title="Miles Info" />
+        <item
+            android:id="@+id/nav_share_miles"
+
+            android:title="Share Miles" />
+        <item
+            android:id="@+id/nav_notification"
+
+            android:title="Notification" />
+        <item
+            android:id="@+id/nav_event"
+
+            android:title="Events" />
+
+        <item
+            android:id="@+id/nav_auto_dispatch"
+            app:actionLayout="@layout/drawer_switch"
+            android:title="Touch" />
+
+    </group>
+
+
+    <item android:title="     ">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:title="Settings"
+                />
+            <item
+                android:id="@+id/nav_send"
+
+                android:title="Help" />
+            <item
+                android:id="@+id/nav_legal"
+                
+                android:title="Legal" />
+            <item
+                android:id="@+id/nav_become_driver"
+
+                android:title="Switch to Driver App" />
+            <item
+                android:id="@+id/nav_logout"
+                android:title="Sign Out" />
+
+
+        </menu>
+
+    </item>
+
+
+</menu>

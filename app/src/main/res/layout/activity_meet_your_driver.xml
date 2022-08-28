@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MeetYourDriverActivity"
+    android:background="#000"
+    android:id="@+id/LinearLayout1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+           <!-- <ImageView
+                android:id="@+id/backArrowBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/arrow" />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Meet Your Driver"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                app:fontFamily="@font/quicksand_bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/car_Image"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/driver_Image"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="63dp"
+                    android:layout_marginTop="110dp"
+                    />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/driverName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quicksand"
+                        android:textColor="#62ABB3"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/quicksand" />
+
+                    <ImageView
+
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="2dp"
+                        app:srcCompat="@drawable/rating"
+                        android:tint="#62ABB3" />
+
+                    <TextView
+                        android:id="@+id/driver_rating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quicksand"
+                        android:text="4.9"
+                        android:textColor="#fff"
+                         />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/car_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:id="@+id/car_make"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    app:fontFamily="@font/quicksand" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/car_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quicksand"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
+                        app:fontFamily="@font/quicksand" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:src="@drawable/dot" />
+
+                    <TextView
+                        android:id="@+id/car_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:fontFamily="@font/quicksand"
+                        android:text="Blue "
+                        android:textColor="#fff"
+                        android:textSize="15sp"
+                        app:fontFamily="@font/quicksand" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quicksand"
+                        android:text="Joined "
+                        android:textColor="#fff"
+                        android:textSize="15sp"
+                        app:fontFamily="@font/quicksand" />
+
+                    <TextView
+                        android:id="@+id/join_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quicksand"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
+                        app:fontFamily="@font/quicksand" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="15dp"
+            android:background="#fff">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".rider.ConfirmTrip" >
+
+            <ImageView
+                android:id="@+id/navigationImgBtn"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="bottom|end"
+                android:src="@drawable/navigate" />
+            </fragment>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|end"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="65dp"
+            android:src="@drawable/message" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="65dp"
+            android:background="#484343" />
+
+        <ImageView
+            android:id="@+id/phoneCallImageView"
+            android:layout_width="120dp"
+            android:layout_height="65dp"
+            android:src="@drawable/phone" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="65dp"
+            android:background="#484343" />
+
+        <ImageView
+            android:id="@+id/cancelTrip"
+            android:layout_width="120dp"
+            android:layout_height="65dp"
+            android:src="@drawable/cross" />
+    </LinearLayout>
+
+</LinearLayout>

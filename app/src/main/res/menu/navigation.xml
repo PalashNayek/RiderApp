@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_msg"
+        android:icon="@drawable/msg"
+        android:iconTint="#ffdb34"
+        android:title="@string/message_driver" />
+
+    <item
+        android:id="@+id/navigation_call"
+        android:icon="@drawable/calldriver"
+        android:iconTint="#ffdb34"
+        android:title="@string/call_driver" />
+
+    <item
+        android:id="@+id/navigation_cancel"
+        android:icon="@drawable/canceltrip"
+        android:iconTint="#ffdb34"
+        android:title="@string/cancel_trip" />
+
+</menu>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="370dp"
+    android:background="@drawable/background_screen2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <!-- <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:layout_gravity="center_vertical">-->
+
+        <ImageView
+            android:id="@+id/iv_back2"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/arrow"
+            android:tint="#000" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Reason for Cancelling"
+            android:textColor="#000"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="30dp"
+        android:background="#000" />
+
+    <!--<view
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="15dp"
+         />-->
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtNotCharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/quicksand"
+            android:paddingLeft="35dp"
+            android:text="Cancel (Do not charge Rider)"
+            android:textColor="#000"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/txtNotCharge_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorRouteLine"
+            android:fontFamily="@font/quicksand"
+            android:paddingLeft="35dp"
+            android:text="Cancel (Do not charge Rider)"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtchargeRider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/quicksand"
+            android:paddingLeft="35dp"
+            android:text="Cancel (Charge Rider)"
+            android:textColor="#000"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/txtchargeRider_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorRouteLine"
+            android:fontFamily="@font/quicksand"
+            android:paddingLeft="35dp"
+            android:text="Cancel (Charge Rider)"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtRiderNotFound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/quicksand"
+            android:paddingLeft="35dp"
+            android:text="Rider Could not be found"
+            android:textColor="#000"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/txtRiderNotFound_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorRouteLine"
+            android:fontFamily="@font/quicksand"
+            android:paddingLeft="35dp"
+            android:text="Rider Could not be found"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtRiderDidNotShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/quicksand"
+            android:paddingLeft="35dp"
+            android:text="Rider did not show"
+            android:textColor="#000"
+
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/txtRiderDidNotShow_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorRouteLine"
+            android:fontFamily="@font/quicksand"
+            android:paddingLeft="35dp"
+            android:text="Rider did not show"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtRiderReqeuestToCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/quicksand"
+            android:paddingLeft="35dp"
+            android:text="Rider requested to cancel"
+            android:textColor="#000"
+
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/txtRiderReqeuestToCancel_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorRouteLine"
+            android:fontFamily="@font/quicksand"
+            android:paddingLeft="35dp"
+            android:text="Rider requested to cancel"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtOther"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/quicksand"
+            android:paddingLeft="35dp"
+            android:text="Other"
+            android:textColor="#000"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/txtOther_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorRouteLine"
+            android:fontFamily="@font/quicksand"
+            android:paddingLeft="35dp"
+            android:text="Other"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="145dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/textviewbackbrown"
+            android:fontFamily="@font/quicksand"
+            android:text="Confirm Cancel"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Disclaimer: Trips cancelled within 3 minutes of acceptance without a legitimate cancellation reason will be assessed a $ 1.65 cancellation fee. The fee will be deducted from the Driver on their next successful trip. Reassigning the trip will avoid the Driver on their next successful trip. Reassigning the trip will avoid the Driver incurring any fees."
+            android:textColor="#000"
+            android:textSize="8dp" />
+    </LinearLayout>
+
+</LinearLayout>

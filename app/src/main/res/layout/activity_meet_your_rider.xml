@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical"
+    tools:context=".driver.MeetYourRiderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <!--<ImageView
+                android:id="@+id/iv_back1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="10dp"
+                android:src="@drawable/arrow" />-->
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Meet Your Rider"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circleimg_user"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/profileicon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:text="Carla"
+                            android:textColor="#ffdb34"
+                            android:textSize="16dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            app:srcCompat="@drawable/star" />
+
+                        <TextView
+                            android:id="@+id/tv_userrating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:text="4.9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/quicksand"
+                            android:text="Joined:" />
+
+                        <TextView
+                            android:id="@+id/tv_userjoined"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:fontFamily="@font/quicksand"
+                            android:text="1/2018" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#484343" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/msgrider" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="65dp"
+                        android:background="#484343" />
+
+                    <ImageView
+                        android:id="@+id/phoneCallImageView"
+                        android:layout_width="120dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/callrider" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="65dp"
+                        android:background="#484343" />
+
+                    <ImageView
+                        android:id="@+id/cancelTrip"
+                        android:layout_width="120dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/cancelride" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#484343" />
+            </LinearLayout>
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_gravity="center"
+                card_view:cardCornerRadius="2dp">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    tools:context=".HomeActivity" />
+               <!-- <Button
+                    android:id="@+id/btn_endTrip"
+                    android:layout_width="85dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="1dp"
+                    android:text="End Trip"
+                    android:background="#ffdb34"/>-->
+                <Button
+                    android:id="@+id/btn_navigate"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="1dp"
+                    android:onClick="onButtonClickbacknavigate"
+                    android:background="@drawable/navigate"/>
+
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksand"
+                android:text="Pick Up:"
+                android:textColor="#37891e"
+                android:textSize="12dp" />
+            <TextView
+                android:id="@+id/tv_picupaddr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/quicksand"
+                android:text="123 State St, Wilmington, DE"
+                android:textColor="#ffffff"
+                android:textSize="14dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksand"
+                android:text="Drop Off:"
+                android:textColor="#972a49"
+                android:textSize="12dp" />
+            <TextView
+                android:id="@+id/tv_dropaddr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/quicksand"
+                android:text="Will let you know once pickup location is reached"
+                android:textColor="#ffffff"
+                android:textSize="14dp" />
+            <TextView
+                android:id="@+id/text_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textSize="16dp"
+                />
+
+            <Button
+                android:id="@+id/reginTripBtn"
+                android:layout_width="120dp"
+                android:layout_height="25dp"
+                android:background="@drawable/textviewbackyellow"
+                android:text="Reassign Trip"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/quicksand_bold"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

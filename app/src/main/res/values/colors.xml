@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="icons_8_muted_blue_dark">#2980b9</color>
+    <color name="color_navigation_list_background">#000000</color>
+    <color name="color_selector_navigation_item">#ffffff</color>
+    <color name="pure_green">#54ff9f</color>
+    <color name="colorRouteLine">#000</color>
+    <color name="bgColor">#ffdb34</color>
+
+
+</resources>

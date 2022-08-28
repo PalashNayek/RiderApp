@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical"
+    tools:context=".driver.UpdateDocumentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_back1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:onClick="onButtonClickback"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="10dp"
+                android:src="@drawable/arrow" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="Edit Document"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:fontFamily="@font/quicksand_bold" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/textviewback"
+
+                android:fontFamily="@font/quicksand"
+                android:paddingLeft="20dp"
+                android:paddingRight="15dp"
+                android:paddingTop="7dp"
+                android:text="Driver License"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/downbox"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/user"
+                        android:layout_width="140dp"
+                        android:layout_height="130dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/user" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/quicksand"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:text="Expiration Date:"
+                            android:textSize="18dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="8dp">
+
+                            <EditText
+                                android:id="@+id/lmm"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginRight="4dp"
+                                android:background="@drawable/blackround"
+                                android:hint="MM"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:singleLine="true"
+                                android:textAlignment="center"
+                                android:textColorHint="#000"
+                                android:textCursorDrawable="@drawable/cursorcolour" />
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/slash" />
+
+                            <EditText
+                                android:id="@+id/ldd"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:background="@drawable/blackround"
+                                android:hint="DD"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:singleLine="true"
+                                android:textAlignment="center"
+                                android:textColorHint="#000"
+                                android:textCursorDrawable="@drawable/cursorcolour" />
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/slash" />
+
+                            <EditText
+                                android:id="@+id/lyy"
+                                android:layout_width="55dp"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="4dp"
+                                android:background="@drawable/blackround"
+                                android:hint="YYYY"
+                                android:inputType="number"
+                                android:maxLength="4"
+                                android:singleLine="true"
+                                android:textAlignment="center"
+                                android:textColorHint="#000"
+                                android:textCursorDrawable="@drawable/cursorcolour" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/cam1"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:paddingLeft="5dp"
+                                android:src="@drawable/cameraicon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/quicksand"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="15dp"
+                                android:text="Take Photo"
+                                android:textSize="18dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_licensetext"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:textColor="#ffffff"
+                    android:textStyle="normal"
+                    android:textSize="12dp"
+                    android:text="License Status"
+                    android:paddingLeft="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/quicksand"
+                    android:background="@drawable/roundwhite"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/textviewback"
+
+                android:fontFamily="@font/quicksand"
+                android:paddingLeft="20dp"
+                android:paddingRight="15dp"
+                android:paddingTop="7dp"
+                android:text="Vehicle Registration"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/downbox"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/car"
+                        android:layout_width="140dp"
+                        android:layout_height="130dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/car" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/quicksand"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:text="Expiration Date:"
+                            android:textSize="18dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="8dp">
+
+                            <EditText
+                                android:id="@+id/rmm"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginRight="4dp"
+                                android:background="@drawable/blackround"
+                                android:hint="MM"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:singleLine="true"
+                                android:textAlignment="center"
+                                android:textColorHint="#000"
+                                android:textCursorDrawable="@drawable/cursorcolour" />
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/slash" />
+
+                            <EditText
+                                android:id="@+id/rdd"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:background="@drawable/blackround"
+                                android:hint="DD"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:singleLine="true"
+                                android:textAlignment="center"
+                                android:textColorHint="#000"
+                                android:textCursorDrawable="@drawable/cursorcolour" />
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/slash" />
+
+                            <EditText
+                                android:id="@+id/ryy"
+                                android:layout_width="55dp"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="4dp"
+                                android:background="@drawable/blackround"
+                                android:hint="YYYY"
+                                android:inputType="number"
+                                android:maxLength="4"
+                                android:singleLine="true"
+                                android:textAlignment="center"
+                                android:textColorHint="#000"
+                                android:textCursorDrawable="@drawable/cursorcolour" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/cam2"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:paddingLeft="5dp"
+                                android:src="@drawable/cameraicon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/quicksand"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="15dp"
+                                android:text="Take Photo"
+                                android:textSize="18dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_registrationtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:textColor="#ffffff"
+                    android:textStyle="normal"
+                    android:textSize="12dp"
+                    android:text="Registration Status"
+                    android:paddingLeft="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="@font/quicksand"
+                    android:gravity="center"
+                    android:background="@drawable/roundwhite"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/textviewback"
+
+                android:fontFamily="@font/quicksand"
+                android:paddingLeft="20dp"
+                android:paddingRight="15dp"
+                android:paddingTop="7dp"
+                android:text="Vehicle Insurance"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/downbox"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/book"
+                        android:layout_width="140dp"
+                        android:layout_height="130dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/book" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/quicksand"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:text="Expiration Date:"
+                            android:textSize="18dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="8dp">
+
+                            <EditText
+                                android:id="@+id/imm"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginRight="4dp"
+                                android:background="@drawable/blackround"
+                                android:hint="MM"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:singleLine="true"
+                                android:textAlignment="center"
+                                android:textColorHint="#000"
+                                android:textCursorDrawable="@drawable/cursorcolour" />
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/slash" />
+
+                            <EditText
+                                android:id="@+id/idd"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:background="@drawable/blackround"
+                                android:hint="DD"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:singleLine="true"
+                                android:textAlignment="center"
+                                android:textColorHint="#000"
+                                android:textCursorDrawable="@drawable/cursorcolour" />
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/slash" />
+
+                            <EditText
+                                android:id="@+id/iyy"
+                                android:layout_width="55dp"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="4dp"
+                                android:background="@drawable/blackround"
+                                android:hint="YYYY"
+                                android:inputType="number"
+                                android:maxLength="4"
+                                android:singleLine="true"
+                                android:textAlignment="center"
+                                android:textColorHint="#000"
+                                android:textCursorDrawable="@drawable/cursorcolour" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/cam3"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:paddingLeft="5dp"
+                                android:src="@drawable/cameraicon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/quicksand"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="15dp"
+                                android:text="Take Photo"
+                                android:textSize="18dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_insurancetext"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:textColor="#ffffff"
+                    android:textStyle="normal"
+                    android:textSize="12dp"
+                    android:text="Insurance Status"
+                    android:paddingLeft="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="@font/quicksand"
+                    android:gravity="center"
+                    android:background="@drawable/roundwhite"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_documentdetails"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btnupdate"
+                android:fontFamily="@font/quicksand_bold"
+                android:padding="10dip"
+                android:text="Update"
+                android:textAllCaps="false"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

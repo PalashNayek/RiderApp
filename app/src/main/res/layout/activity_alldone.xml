@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".driver.AlldoneActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You're All Done!"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/quicksand_bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thank you for your interest in joining MILES. We have received your information and documents and they're being reviewed."
+            android:textColor="#bfbfbfbf"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="16dp"
+            android:fontFamily="@font/quicksand"
+            android:layout_marginTop="25dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="You should hear from us within 7-10 business days concerning the status of your application. If all of your information is clear and you pass our background check review, you will receive a welcome email."
+            android:fontFamily="@font/quicksand"
+            android:textColor="#bfbfbfbf"
+            android:textSize="16dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="16dp"
+            android:fontFamily="@font/quicksand"
+            android:textColor="#bfbfbfbf"
+            android:text="The email with consist of our Fare Split &amp; Earnings Agreement (FSEA). This agreement must be reviewed, signed, and accepted in order for you to become a driver with MILES."
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="16dp"
+            android:fontFamily="@font/quicksand"
+            android:textColor="#bfbfbfbf"
+            android:text="Below is your car tier based on the information you submitted, as well as other necessary information that applies only after your successful approval."
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="16dp"
+                android:textColor="#bfbfbfbf"
+                android:fontFamily="@font/quicksand"
+                android:text="Your Car Tier:"/>
+            <TextView
+                android:id="@+id/tv_car_tire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#bfbfbfbf"
+                android:fontFamily="@font/quicksand"
+                android:text=""/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="16dp"
+                android:textColor="#bfbfbfbf"
+                android:fontFamily="@font/quicksand"
+                android:text="Base Rate:$"/>
+
+            <TextView
+                android:id="@+id/tv_baseRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#bfbfbfbf"
+                android:fontFamily="@font/quicksand"
+                android:text=""/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="16dp"
+                android:textColor="#bfbfbfbf"
+                android:fontFamily="@font/quicksand"
+                android:text="Minimum Daily Pay:" />
+            <TextView
+                android:id="@+id/tv_minDailyPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#bfbfbfbf"
+                android:fontFamily="@font/quicksand"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="16dp"
+                android:textColor="#bfbfbfbf"
+                android:fontFamily="@font/quicksand"
+                android:text="Random Bonus Eligibility:"/>
+            <TextView
+                android:id="@+id/tv_randomBonus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#bfbfbfbf"
+                android:fontFamily="@font/quicksand"
+                android:text=""/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="16dp"
+                android:textColor="#bfbfbfbf"
+                android:fontFamily="@font/quicksand"
+                android:text="Trip Cluster Eligibility:"/>
+            <TextView
+                android:id="@+id/tv_tripCluster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#bfbfbfbf"
+                android:fontFamily="@font/quicksand"
+                android:text=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="16dp"
+                android:textColor="#bfbfbfbf"
+                android:fontFamily="@font/quicksand"
+                android:text="Driver#:"/>
+            <TextView
+                android:id="@+id/tv_driverId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#bfbfbfbf"
+                android:fontFamily="@font/quicksand"
+                android:text=""/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="16dp"
+            android:textColor="#bfbfbfbf"
+            android:fontFamily="@font/quicksand"
+            android:text="We look forward to working with you soon!"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="16dp"
+            android:textColor="#bfbfbfbf"
+            android:fontFamily="@font/quicksand"
+            android:text="Regards,"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="16dp"
+            android:textColor="#bfbfbfbf"
+            android:fontFamily="@font/quicksand"
+            android:text="The MILES Team!"
+            android:layout_marginTop="15dp"/>
+
+
+        <Button
+            android:id="@+id/btn_alldone"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/btndone"
+            android:fontFamily="@font/quicksand_bold"
+            android:padding="10dip"
+            android:text="Done"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</ScrollView>

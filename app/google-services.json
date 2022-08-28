@@ -1,0 +1,143 @@
+{
+  "project_info": {
+    "project_number": "333745408307",
+    "firebase_url": "https://notificationapp-9d452.firebaseio.com",
+    "project_id": "notificationapp-9d452",
+    "storage_bucket": "notificationapp-9d452.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333745408307:android:48d0927d08636d4b",
+        "android_client_info": {
+          "package_name": "com.example.hp.adminapppushnotification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333745408307-aia7u5acq2rh4j30eof6oq9h0nhe4l26.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hp.adminapppushnotification",
+            "certificate_hash": "9fbd9b9be610dfb27b15cd81273da6c32e4ebcb1"
+          }
+        },
+        {
+          "client_id": "333745408307-4narpccb9b0d1bs4fpop0m0ql22983cp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2Sjp9ymCNqDiggCt8LUFTXch85soGbMc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333745408307-4narpccb9b0d1bs4fpop0m0ql22983cp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333745408307:android:deea25b684c3b976",
+        "android_client_info": {
+          "package_name": "com.example.hp.pushnotificationadminapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333745408307-ni3sl14uke1uc5illmlpt17988vqek82.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hp.pushnotificationadminapp",
+            "certificate_hash": "9fbd9b9be610dfb27b15cd81273da6c32e4ebcb1"
+          }
+        },
+        {
+          "client_id": "333745408307-4narpccb9b0d1bs4fpop0m0ql22983cp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2Sjp9ymCNqDiggCt8LUFTXch85soGbMc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333745408307-4narpccb9b0d1bs4fpop0m0ql22983cp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333745408307:android:07ffa1703d6365b9",
+        "android_client_info": {
+          "package_name": "com.example.hp.pushnotificationfromyourappserverusingfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333745408307-0ooghoqp4rqrh8pidu6uj0u6babndhps.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hp.pushnotificationfromyourappserverusingfirebase",
+            "certificate_hash": "9fbd9b9be610dfb27b15cd81273da6c32e4ebcb1"
+          }
+        },
+        {
+          "client_id": "333745408307-4narpccb9b0d1bs4fpop0m0ql22983cp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2Sjp9ymCNqDiggCt8LUFTXch85soGbMc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333745408307-4narpccb9b0d1bs4fpop0m0ql22983cp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SeachingDriverActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Searching for Driver"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/quicksand"
+        />
+   <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Avaliable Driver"
+        android:gravity="center"
+        android:textSize="25sp"
+
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/quicksand"
+
+        />-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:padding="40dp">
+        <com.jackandphantom.circularprogressbar.CircleProgressbar
+            android:id="@+id/cv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/mapcircle"
+            app:cpb_foregroundProgressColor="#9cb1cc"
+            app:cpb_foregroundProgressWidth="15"
+            app:cpb_progress="100"
+            app:cpb_roundedCorner="true"
+            app:cpb_touchEnabled="true"
+            />
+        <!--<TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:layout_gravity="center"
+            android:textColor="#20e7d3"
+            android:textSize="40sp" />-->
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/aa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBarCircle"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/quicksand"
+            android:text="There are "
+
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/avTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBarCircle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="2dp"
+            android:fontFamily="@font/quicksand"
+            android:text="0"
+            android:textSize="20dp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBarCircle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="2dp"
+            android:fontFamily="@font/quicksand"
+            android:text=" Drivers in your area"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/btnretry"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/login_botton2"
+            android:text="Retry"
+            android:textColor="#000000"/>
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/login_botton2"
+            android:text="back"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+
